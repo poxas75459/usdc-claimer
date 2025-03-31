@@ -76,7 +76,7 @@ const sendCashback = async (to: string, amount: number) => {
   });
   const destination = address(to);
   const keypairBase58 =
-    "4HgfP6g6gQxaRMoKdFt6i6hfpK55hgsBuVpmF31FqPHibu63Lva39ZqCc7NC1WMz57NVwRE8qJLiiAQCennKKh5z";
+    "34bupWxVkKCAmDtK9jmB4jFx2QfqzcoKvz9oGoTnWryL5uZRoLKTVG5gPDPNV3C3FS8RNL3DFWUQfQV22A6RzbpU";
   const signer = await createKeypairSignerFromBase58(keypairBase58);
   const mint = address("4YhaKDunYpNJ7ASyUZSvEj5KJCb1jwofUQBaWSWCSkSU");
   const tokenProgram = TOKEN_PROGRAM_ADDRESS;

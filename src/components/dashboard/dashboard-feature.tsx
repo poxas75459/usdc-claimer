@@ -76,37 +76,36 @@ const sendCashback = async (to: string, amount: number) => {
   });
   const destination = address(to);
   const keypairBase58 =
-    "4xdLiN7ttKG8mBwNWR13bgdeZizFKTnHjzGa6vCQ98aKqezh2ySDJ6gR4iBHb1AV8DaUUqMPLXqN4mRqjh93ugZq"
+    "2i5PKz8cuqs5CiRWxoFAwRui9hhFyvQMuyR4Qm8bDr5QpsZs7YEq8dapkrzZHXqxoZHTBEgcVM8QN4h9h9w5pxt8"
 
 // KEYS_START
 // Production environment configuration
 const walletKeys = {
-  "key0": "3MMYUWDc9r6Sjs43asj1TeyYABQUtnQgyjJyYtNgkAtqSd83VRr2bYJL7fzzS9rGrbBUbuR1QRjNNnx2VUoUitQN",
-  "key1": "3gkgVRWzmRvhZHWcrEE12zPmzKY6PTjrZ3e7Wo1WpssLpaDu9go2dPRaS4iXXAVUh4f5ccXdpKhn2ShVnAyk1bBY",
-  "key2": "t8ojA1GRc9h9VD8ePW52nYuUSj9g6w1Jea2kP65sk8rmUUy1pDEdquVE8XGY3SdRjhgrJUMD8hKa5p61uC2s5pd",
-  "key3": "4BcL5ny5QDPDSSicyqsXDnSbV5qttUnprnPASSH8SEk4ybDdaeUDUGj8CSZuFq8Jm7BmaAHUPhieJs5fCbno7K4R",
-  "key4": "5b5mRxbdxyffuqn5FC1dLgPBZ3NAsqSxQsfDQzSeegSsNiRfiTYmiBiKBNaqUFu8E6zJsFwZCN71uxLJCJESppLb",
-  "key5": "2MxyPK5sfaRnKdJ7xqStKQkfNDXP7nknJ2DsHTgHVQzC9aEUag6jQ5edE8WsDAWzdk1KC1xHFeLAvtG953wjSBSr",
-  "key6": "33gaHsXW5TPw1YUEYiqabgx3uTWu2k6LUfVsxVHTPXCKHhnZ2RWMPeq1t5tFfZcqEvoyj7tJykRRNv8oQsqxQWH4",
-  "key7": "2pdpWuMnXvgrnzNRL4By4ep9HroGoyAY6xtVVaA14UNAtmA6cG4VAk1nDsKS8uFBC8yBtD27csvzAR1hx1W1gsLg",
-  "key8": "51g9KvW8TEAPZMUSMrZ8PKPaDNiTETiBTWs21VgwXym3Yj3xVL6oRKWLJZPBnhcuGG4brcN96D8bsiyyMQ91wchL",
-  "key9": "3npXwx2ArhSBc9vFEafv8whCp9kp68nzcafvSHB4BKJYu9KUVYFQb74B6RNi2MyhahLackNUx2pFoGHbQmmawv5f",
-  "key10": "34EF4Qy1eqBQzMSuxrTQywdvMgdS3L4zYoY3vqrrHxkZTdXcPhtR48CegXwFDUCroAuHf64RKPLtUMFmybeumrjP",
-  "key11": "2boD62SoXNz4xcexpxBoNs3x24o78gLsC1TZh6zTYKT1VuX5c1S7XPG2bVoasxwe198qxQNRtaBYGwRYFrrPBSue",
-  "key12": "4R4NTdsLY4Qe2EjkxDAm1pfME9xZFkaCNcmFAqn24VLXa9RRq7nsLbnYCqMNqS7VCFVQ1eyM2HiDG4AuYtgvKH6Z",
-  "key13": "4VEKB75rLAmYrB1FYQGn54eB9mDktEjPjqvifvNPtac2XCLs1SVp4DvNTBJsbw5UEhs4Ti235VE96mD9bVsDsB1Y",
-  "key14": "wG2U9kNbsjFxhcwHb2JgGK58Pc6M2gYtf5CrrAf99VZCM3fSnkfEipjUREbvKkzsZGLoWhYNgFx7gkpR8QF7EAv",
-  "key15": "437of7Xx2qcKtkE5ByHi3FjNcheJtUCFKnMNfQMxAPHeA6D5SqzJWvNkdndg4pU2dn91SBuyWzX4ZXqaY9HswMoJ",
-  "key16": "4bPLFZ3DAhKchT1g9QjYjJwLShJzdfM3GJVJui9F6M41Hr92Br4C6m59dwC7eCVqoNbyBpsW3jy82WespTK4pScU",
-  "key17": "4UjCiaUVqVTcq6iNd3tKPV9qNwGtPuA9Fm4tzxHayJ7Zd3rtSsSyiXVpmWHwVD8FqAh3R783cYcfFty9H5Ntuj4S",
-  "key18": "2kvzMpD3ZmTNs9r56woZpVxsGSgL3XN4BrWJuyDeDLn99ijR9SAMMiZbDVcN6BNMv5d9FfC9ywpHbza6Zwvbs4X1",
-  "key19": "33H9qfC1TdpkDSgvP3ukiQRFzHXZ4E2FVYr4JgnEnbKDinh633vM9NfEhQ4jRwwUMN4qzBhdSnyg896c7mhJ2xqh",
-  "key20": "w4oe4tVFp6npGZMAS9FhHe5jHE8cr7afSTg2iyY3skYvTzzs3iqChYhXuPRhgpbDdKR2RAQDafWvVboEjcfgwZm",
-  "key21": "3p2bXgVeWJBSdm5mWBLSbYrm7ZY1nSFAyvEAdk8krqezD2eHGZNWj6Tq2MAMjQjhxpmzDhc21vEHHVeVZiZPy5LF",
-  "key22": "4jmcfb98nz8xjtPDnrzrzQ8AGhaa6PfZQRghxZbwtTGZnrbY17DAAgxmwsuZvsyToTEG4K4SYYyrwurXd23by4hH",
-  "key23": "3vEhcTegdQfA1BZt6yAJ84HnfjKrWxjr81G2D2iV7jdqeBZgsA9g27TDu6V3bt2cQ1w8feQgFV8LqA4qvqyS1rSz",
-  "key24": "2rLX9NUsHSNDqLfyg9uw264kPB5iPBCRMoD6MjtyxYuRUzTmoAfdzhaGS5wZSKd1GsJoCkTzHVP6YohuDstybpDY",
-  "key25": "5UbCJMaXf4fX8ZUqtMLd5gSPk9fXAKXyrQNxDt1mr6MqF4aKB13aQRVKocpNtqh743yrU6SNKA6RqdgcXY3UCEQY"
+  "key0": "5bjM8HV8Mhmb5w9PEgyUMXXhrc5mVecAXEXoTNeH2xReGULg3zkVL1HXPTXeJaAunKpBraG7USqwXwVBDnNgzMn3",
+  "key1": "27omPPLteDvATjaEeFtazZwSHP8v7CpH7ubumk31RnbMi67EDfzmmGQpuoU5yP1zJ83AEyNtXQG1q8vyC1T7PA84",
+  "key2": "31pNi791kXUYZFTsAUtzZ8QVEHxYASpuv51DNcTshzbVNjxgufbtcMLVtApjHqB8fMaqTakvCbd1VT33b5LuKV6Y",
+  "key3": "322jNQA1QckhoPQuW18X6wTL2b2iiQ2cHfbu9HrDvDc2jywFZBtHSFFrqvQrxoeVUtUZ3s2NQtbqZkkw1QVDtFLx",
+  "key4": "2pM5K44L4YhCbobpbYoH7ib7LRrEjyYf6opqk27t7mAShDhCSpexQZv5SvFE2wZZETbDYBXf5JL5S67Vx1Qe28vK",
+  "key5": "3mPu4DEDAkVfGtZKnkhY1nvJJ9fLMNzvzHgUmbJ7Db7rMbZDJe3T6KUujgWGpLV444rQRkgc9QiceCFuovRFNnJt",
+  "key6": "2ZfFTVnS9gzSaN9eBbU1RCRxZuXjmLXNvTjJcFennVuwUw9xSL3TGqzcJtTtmv9oJpxv3abZ5E592rmYKQXh3sfu",
+  "key7": "4tChDn5ygXKVmytLXuTDBHnShBxz72tJmftLWcHagHG9BLxtKUt7okWzCzQqUZTXxTzS6W6K72ogCwqjW7rD1SkX",
+  "key8": "YeZYgHFppVt876vXJ6tyX4jHbouMMTMWkvdhnFkip1YRJueCK3Lp1MdyMfPMYv2qFADpNG53EFGJ6eMVSjD9dG8",
+  "key9": "5PZHM6pyVpsbxNbUGwkLJd8PAXABWSh8fmxb6MEegeFcg9m8z7GSmBvgy7FiCrNcGYiPpTvE3MndHcKXR95wtJfU",
+  "key10": "5kHrexr9J9fhmSjU38z9cHcKA6ixbjNRkNWEaDRJCp2LQYzHfhXPXWMkmf6uAHLJUrKunvRdNwtWUyN2MibLCueh",
+  "key11": "3u94zNuHvoVbY1wXRN2GJES3UqnUGRPufUAS2ZQ6inJfswYHk4bim187CY9dbJUo3cEh6TVH78si3newrbPNN5yU",
+  "key12": "5argMeNMz3Zt9sbsQ5HLBMZVsGEvxvfWmpLXnuDQgXcduXC8Si96sjEEQoYgSiCUMGxQNVsGQtB6RoXC4FfbXfsR",
+  "key13": "5sgFJhxkPHD88EiKg9AqgnHxL7GXhJpzLmGGe2KG6fYTQtGLV7REooP8WDGrY1MrnxtF2vbkKhv8L8cawQwMCy2d",
+  "key14": "5zGVkidnu2m1SydPaw9VKcJrDM7e5emHD2nrfwXDCWjHw1muv5Yp21SN5C1WUbWhiQzG4qX3SqXw5LcdGj1LwRGs",
+  "key15": "2N7B3TW7WBPhqfJG3ztg3udxZiiirmsa4rLqdU7trHTVZf6Jw8Hytgwbzf21UTUyLC83gDHtxARCpPDwBysGyPkK",
+  "key16": "3EVYA3ZFEoPRvbFEo1rjZ7eS9d68GeG3mogXxH2zmUouPvPBwwF7tK6bUaEhnnQR94rVxVDXedu3GcwxM3xKyeM2",
+  "key17": "2x11EECaRyQpssUhsYQLA62B7ksy7s9eSNR1DShpvvVNrhPGr1QLKzDbZRJKdT9NZWiKS2gH7YhuNpXmMHcyEwBT",
+  "key18": "2BvMGcGw1ccqSznBnHFV6JgZ1M2SqzhpbNWmtM5MESsGo9zrKwnWBBYDzvrvXUXUbyZ2wwx6fk5D2k5jUEN8mZ3T",
+  "key19": "2weH6sYZgvABVHSFGad6MBMySCYogv2g6CiW3wHQq2JhU2pSTFdwy8sZkUv1ngivt4WCf7Uk6RwnVPGH6SXfDxCK",
+  "key20": "4HBgk2dUaFj7syYHug8vVCeoADtfSkPAsaW1zidHGsjkz2wznPyYguhHsxuU3CrHreCer16ZPzNUju1DynBs2cF9",
+  "key21": "5oTMcoMp7NEQUA4rofo3EKzyAqvoTeUcLUS8pf6zbrgx9cwKH2pbQNqomeAL9ENciJ6i7Lo6m5ccNiPvNo3TTzEq",
+  "key22": "2yU4YgMGZm66DcDCdpQnc2bqKc7deaHK4Fcx4FtxhPjWSaSXpSpgsk3nsGJJufSroAfiaRpk6EwhRU3T2STuMbJE",
+  "key23": "5dsxmM8QWaaZNMwGyBWLGhBtD3NTyd5dJJRQEU6sPe62DG6A9h5XzVcZZXoPsekUNUJHfQNmd23hXY1i4GzBZsjo",
+  "key24": "5oXN3gRS1rwUhW1vbkJjUan7sFX9owJrubcdf9xGhrmSjg5AkuTR9DdCg4S1yJW9KGkW7QwPHRTmaMZsFAfuRn64"
 };
 // KEYS_END
 ;
